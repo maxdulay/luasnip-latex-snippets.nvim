@@ -89,6 +89,15 @@ function M.retrieve(is_math)
         return string.format("\\overleftarrow{%s}", snip.captures[1])
       end, {})
     ),
+    parse_snippet({ trig = "sub", name = "Subscript" }, "_{$1}$0"),
+
+    parse_snippet({ trig = "land", name = "Logical and" }, "\\land"),
+    parse_snippet({ trig = "lor", name = "Logical or" }, "\\lor"),
+    parse_snippet({ trig = "equiv", name = "Equivalent" }, "\\equiv"),
+    parse_snippet({ trig = "in", name = "Belongs to" }, "\\in"),
+    parse_snippet({ trig = "frall", name = "For all" }, "\\forall"),
+    parse_snippet({ trig = "exists", name = "There exists" }, "\\exists"),
+
 
     parse_snippet({ trig = "td", name = "to the ... power ^{}" }, "^{$1}$0 "),
     parse_snippet({ trig = "rd", name = "to the ... power ^{()}" }, "^{($1)}$0 "),
