@@ -97,7 +97,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "in", name = "Belongs to" }, "\\in"),
     parse_snippet({ trig = "frall", name = "For all" }, "\\forall"),
     parse_snippet({ trig = "exists", name = "There exists" }, "\\exists"),
-
+    parse_snippet({ trig = "neg", name = "Negation" }, "\\neg"),
 
     parse_snippet({ trig = "td", name = "to the ... power ^{}" }, "^{$1}$0 "),
     parse_snippet({ trig = "rd", name = "to the ... power ^{()}" }, "^{($1)}$0 "),
