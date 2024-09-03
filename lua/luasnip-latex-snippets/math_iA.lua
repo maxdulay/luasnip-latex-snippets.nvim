@@ -94,7 +94,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "land", name = "Logical and" }, "\\land"),
     parse_snippet({ trig = "lor", name = "Logical or" }, "\\lor"),
     parse_snippet({ trig = "equiv", name = "Equivalent" }, "\\equiv"),
-    parse_snippet({ trig = "in", name = "Belongs to" }, "\\in"),
+    parse_snippet({ trig = "inn", name = "Belongs to" }, "\\in"),
     parse_snippet({ trig = "frall", name = "For all" }, "\\forall"),
     parse_snippet({ trig = "exists", name = "There exists" }, "\\exists"),
     parse_snippet({ trig = "neg", name = "Negation" }, "\\neg"),
